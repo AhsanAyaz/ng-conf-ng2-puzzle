@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Load libraries -->
     <!-- IE required polyfills, in this exact order -->
-    <script src="javascripts/lib/es6-shim.min.js"></script>
-    <script src="javascripts/lib/system-polyfills.js"></script>
-    <script src="javascripts/lib/shims_for_IE.js"></script>
-    <script src="javascripts/lib/angular2-polyfills.js"></script>
-    <script src="javascripts/lib/system.src.js"></script>
-    <script src="javascripts/lib/Rx.js"></script>
-    <script src="javascripts/lib/angular2.js"></script>
-    <script src="javascripts/lib/router.dev.js"></script>
-    <script src="javascripts/lib/http.js"></script>
+    <script src="app/lib/es6-shim.min.js"></script>
+    <script src="app/lib/system-polyfills.js"></script>
+    <script src="app/lib/shims_for_IE.js"></script>
+    <script src="app/lib/angular2-polyfills.js"></script>
+    <script src="app/lib/system.src.js"></script>
+    <script src="app/lib/Rx.js"></script>
+    <script src="app/lib/angular2.js"></script>
+    <script src="app/lib/router.dev.js"></script>
+    <script src="app/lib/http.js"></script>
 
 
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="src/app.css">
 </head>
 <body>
 <app>Loading...</app>
@@ -31,7 +31,7 @@
             }
         }
     });
-    System.import('javascripts/boot.js')
+    System.import('app/javascripts/boot')
             .then(null, console.error.bind(console));
 </script>
 </body>
